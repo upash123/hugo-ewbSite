@@ -1,4 +1,4 @@
-baseURL : 'http://upash123.github.io/'
+baseURL : 'https://sumi-site.netlify.app/'
 
 # i18n
 defaultContentLanguage : "zh-tw"
