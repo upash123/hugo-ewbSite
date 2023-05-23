@@ -16,24 +16,34 @@ languages:
         hasCJKLanguage: false
         copyright : "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
         taxonomies:
-          category: categories
-          tag: tags
-          series: series
+          category: ENcategories
+          tag: ENtags
+          series: ENseries
+        profileMode:
+            enabled: true
+            title: PaperMod
+            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+            buttons:
+                - name: Blog
+                  url: posts
+                - name: Profile Mode
         menu:
             main:
                 - name: Archive
-                  url: archives
+                  url: archives/
                   weight: 5
                 - name: Search
-                  url: search/
+                  url: search
                   weight: 10
-                - name: Tags
-                  url: tags/
+                - name: ENTags
+                  url: entags
                   weight: 10
-                - name: Github
+                - name: ENGithub
                   url: https://github.com/upash123
                 - name: Discord
-                  url: https://discord.gg/ahpmTvhVmp
+                  url: 
+              
+
     zh-tw:
         languageName: "TW"
         contentDir: "content/zh-tw"
@@ -87,7 +97,11 @@ params:
             - name: Archives
               url: archives
             - name: Tags
-              url: tags       
+              url: tags   
+    editPost:
+    URL: "https://github.com/upash123/hugo-webSite"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link    
 markup:
     goldmark:
         renderer:
@@ -100,6 +114,29 @@ markup:
         # lineNos: true
         # style: monokai
 
+privacy:
+    vimeo:
+        disabled: false
+        simple: true
+
+    twitter:
+        disabled: false
+        enableDNT: true
+        simple: true
+
+    instagram:
+        disabled: false
+        simple: true
+
+    youtube:
+        disabled: false
+        privacyEnhanced: true
+
+services:
+    instagram:
+        disableInlineCSS: true
+    twitter:
+        disableInlineCSS: true
 menu :
   main :
     identifier : "post"

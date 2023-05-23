@@ -1,7 +1,9 @@
 ---
+author: "sumi"
 title: "第一篇文章"
-date: 2023-05-23T09:39:53+08:00
+date: 2023-05-23T13:49:53+08:00
 draft: false
+tags: ["test"]
 ---
 
 # 試打第一篇文章
