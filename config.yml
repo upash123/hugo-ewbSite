@@ -1,0 +1,109 @@
+baseURL : 'http://upash123.github.io/'
+
+# i18n
+defaultContentLanguage : "zh-tw"
+defaultContentLanguageInSubdir : false
+
+title : '菜鳥的小小筆記天地'
+paginate: 5
+theme : "hugo-PaperMod"
+languages:
+    en:
+        languageName: "us"
+        contentDir : "content/en-us"
+        weight: 2
+        languageCode : 'en-us'
+        hasCJKLanguage: false
+        copyright : "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Github
+                  url: https://github.com/upash123
+                - name: Discord
+                  url: https://discord.gg/ahpmTvhVmp
+    zh-tw:
+        languageName: "TW"
+        contentDir: "content/zh-tw"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Search
+                  url: search/
+                  weight: 10
+                - name: Tags
+                  url: tags/
+                  weight: 10
+                - name: Github
+                  url: https://github.com/upash123
+                - name: Discord
+                  url: 
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "QQQ"
+    author: upash123
+    defaultTheme: auto
+    ShowShareButtons: true
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowRssButtonInSectionTermList: true
+    ShowToc: true
+    profileMode:
+        enabled: false
+        title: PaperMod
+        imageUrl: "#"
+        imageTitle: my image
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+            - name: Archives
+              url: archives
+            - name: Tags
+              url: tags       
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        noClasses: false
+        # anchorLineNos: true
+        # codeFences: true
+        # guessSyntax: true
+        # lineNos: true
+        # style: monokai
+
+menu :
+  main :
+    identifier : "post"
+    url : "/posts/"
+    # title will be shown when you hover on this menu link
+    title : ""
+    weight : 1
