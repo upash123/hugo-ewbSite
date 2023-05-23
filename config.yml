@@ -8,6 +8,39 @@ title : '菜鳥的小小筆記天地'
 paginate: 5
 theme : "hugo-PaperMod"
 languages:
+    jp:
+        languageName: "jp"
+        contentDir : "content/jp"
+        weight: 2
+        languageCode : 'jp'
+        hasCJKLanguage: false
+        taxonomies:
+          category: JPcategories
+          tag: JPtags
+          series: JPseries
+        profileMode:
+            enabled: true
+            title: PaperMod
+            subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
+            buttons:
+                - name: Blog
+                  url: posts
+                - name: Profile Mode
+        menu:
+            main:
+                - name: Archive
+                  url: archives/
+                  weight: 5
+                - name: Search
+                  url: search
+                  weight: 10
+                - name: JPTags
+                  url: jptags
+                  weight: 10
+                - name: JPGithub
+                  url: https://github.com/upash123
+                - name: Discord
+                  url:         
     en:
         languageName: "us"
         contentDir : "content/en-us"
@@ -98,10 +131,7 @@ params:
               url: archives
             - name: Tags
               url: tags   
-    editPost:
-    URL: "https://github.com/upash123/hugo-webSite"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link    
+    
 markup:
     goldmark:
         renderer:
