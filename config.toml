@@ -1,3 +1,13 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+
+theme = "hugo-PaperMod"
+
+[menu]
+  [[menu.main]]
+    identifier = "post"
+    url = "/post/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
